@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta name="viewport" content="width=device-width, intial-scale=1.0">
+    <title> Rajarata Network Academy </title>
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,600;1,500&display=swap"
+        rel="stylesheet">
+    <script src="https://kit.fontawesome.com/ac649c4fa1.js" crossorigin="anonymous"></script>
+
+
+</head>
+
+<body>
+    <!--The Header-->
+    <section class="sub-header">
+        <nav>
+            <div class="navi" id="navLinks">
+                <i class="fa fa-times" onclick="hidemenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a> </li>
+                    <li><a href="about.html">ABOUT</a> </li>
+                    <li><a href="news.html">NEWS</a> </li>
+                    <li><a href="cert.html">COURSES</a> </li>
+                    <li><a href="contact.html">CONTACT</a> </li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showmenu()"></i>
+            <a href="index.html"> <img src="images/logo.png"> </a>
+        </nav>
+        <h1>News Updates about the Academy</h1>
+
+    </section>
+
+    <!--blog content-->
+    <section class="news">
+        <div class="row">
+            <div class="news-col">
+                <img src="images/hostel.jpg">
+                <h2>Our new hostel building</h2>
+                <p>Our academy going to upgrade existing facilities the project aims to add four new faculties and
+                    accommodate up to 2000 students in years to come.<br> picture depicts how a building's façade looks
+                    like</p>
+                <div class="comment-box">
+                    <h3> Leave a Comment </h3>
+
+                    <form id="cform" class="comment-form">
+                        <input type="text" placeholder="Enter Name">
+                        <input type="email" placeholder="Enter email">
+                        <textarea rows="5" placeholder="Your Comment"></textarea>
+                        <button type="submit" class="hero-btn red-btn"> Post Comment</button>
+                    </form>
+                </div>
+    </section>
+
+
+    <!--Java Script for Menu tab-->
+    <script>
+        var navLinks = document.getElementById("navLinks")
+        function showmenu() {
+            navLinks.style.left = "0";
+        }
+
+        function hidemenu() {
+            navLinks.style.left = "-200px";
+        }
+        var cform = document.getElementById('cform')
+    cform.addEventListener('submit',function(e){
+        alert("comment posted")
+    } )</script>
+
+
+    <section class="footer">
+        <HR>
+        <div class="icons">
+            <a href="https://www.facebook.com/charitha.cb/"><i class="fa fa-facebook"></i></a>
+            <i class="fa fa-twitter"></i>
+            <i class="fa fa-instagram"></i>
+            <a href="https://www.linkedin.com/in/charitha-cb/"><i class="fa fa-linkedin"></i></a>
+        </div>
+        <p class="dev">Developed by itt1819011</p>
+    </section>
+
+
+</body>
+
+</html>

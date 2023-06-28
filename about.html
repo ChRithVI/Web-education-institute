@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, intial-scale=1.0" />
+    <title>Rajarata Network Academy</title>
+    <link rel="stylesheet" href="style.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,600;1,500&display=swap"
+        rel="stylesheet" />
+    <script src="https://kit.fontawesome.com/ac649c4fa1.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!--The Header-->
+    <section class="sub-header">
+        <nav>
+            <div class="navi" id="navLinks">
+                <i class="fa fa-times" onclick="hidemenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="news.html">NEWS</a></li>
+                    <li><a href="cert.html">COURSES</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showmenu()"></i>
+            <a href="index.html"> <img src="images/logo.png" /> </a>
+        </nav>
+        <h1>About Us</h1>
+    </section>
+
+    <!--Java Script for Menu tab-->
+    <script>
+        var navLinks = document.getElementById("navLinks");
+        function showmenu() {
+            navLinks.style.left = "0";
+        }
+
+        function hidemenu() {
+            navLinks.style.left = "-200px";
+        }
+    </script>
+
+    <!--About us content-->
+    <section class="about-us">
+        <div class="row">
+            <div class="about-col">
+                <h1>We are the ranked 1 network academy in Sri Lanka</h1>
+                <p>
+                    The Institute of Computer Society of Sri Lanka guides the design of
+                    our certificate programs (CSSL). It is necessary for students who
+                    wish to pursue this certificate program to have passed the GCE
+                    Advanced Level examinations in the subjects Science for Technology
+                    and Information and Communication Technology A total of 1000
+                    students are accepted each year into the program. And we conduct all
+                    the session with higly qualified lectures
+                </p>
+                <a href="contact.html" class="hero-btn red-btn"> Contact Us </a>
+            </div>
+            <div class="about-col">
+                <img src="images/about.jpg" />
+            </div>
+        </div>
+    </section>
+
+    <section class="footer">
+        <hr />
+        <div class="icons">
+            <a href="https://www.facebook.com/charitha.cb/"><i class="fa fa-facebook"></i></a>
+            <i class="fa fa-twitter"></i>
+            <i class="fa fa-instagram"></i>
+            <a href="https://www.linkedin.com/in/charitha-cb/"><i class="fa fa-linkedin"></i></a>
+        </div>
+        <p class="dev">Developed by itt1819011</p>
+    </section>
+</body>
+
+</html>

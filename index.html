@@ -1,0 +1,223 @@
+<!--Reg.no - itt1819011
+    site   - Education Institute-->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, intial-scale=1.0">
+    <title> Rajarata Network Academy </title>
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,600;1,500&display=swap"
+        rel="stylesheet">
+    <script src="https://kit.fontawesome.com/ac649c4fa1.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <!--The Header-->
+    <section class="header">
+
+        <nav>
+            <div class="navi" id="navi">
+                <i class="fa fa-times" onclick="hidemenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a> </li>
+                    <li><a href="about.html">ABOUT</a> </li>
+                    <li><a href="news.html">NEWS</a> </li>
+                    <li><a href="cert.html">COURSES</a> </li>
+                    <li><a href="contact.html">CONTACT</a> </li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showmenu()"></i>
+            <a href="index.html"> <img src="images/logo.png"> </a>
+        </nav>
+
+        <div class="text-box">
+            <h1>Welcome to</h1>
+            <h1>Rajarata Network Academy</h1>
+            <p> We produce skilled certified
+                students <br> of the highest caliber, capable of meeting the demands of both the local and global
+                network industries. </p>
+            <a href="about.html" class="hero-btn">About Us</a>
+        </div>
+
+    </section>
+
+    <!--Java Script for Menu tab-->
+    <script>
+        var navLinks = document.getElementById("navi")
+        function showmenu() {
+            navLinks.style.left = "0";
+        }
+        function hidemenu() {
+            navLinks.style.left = "-200px";
+        }
+    </script>
+
+    <!--certificate Section-->
+    <section class="cert">
+
+        <h1> Certificates that we offer </h1>
+
+        <div class="row">
+            <div class="cert-col">
+                <h3> RCNA </h3>
+                <p>(Rajarata Cetrified <br> Network Associate)</p>
+            </div>
+
+            <div class="cert-col">
+                <h3> RCNP </h3>
+                <p>(Rajarata Cetrified <br> Network Professional)</p>
+            </div>
+
+            <div class="cert-col">
+                <h3> RCNE </h3>
+                <p>(Rajarata Cetrified <br> Network Expert)</p>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!--Facilities Section-->
+    <section class="facilities">
+        <h1> Our Facilities </h1>
+
+        <div class="row">
+
+            <div class="facilities-col">
+                <img src="images/library.png">
+                <h3> Library </h3>
+                <p>In terms of computer science and networking, <br> we've got a huge library of books on the subject.
+                </p>
+            </div>
+
+            <div class="facilities-col">
+                <img src="images/netlab.png">
+                <h3> Networking Labs </h3>
+                <p>Our Labs consist with,<br>
+                <ul>
+                    <li>ADTRAN WAN/PSTN simulators</li>
+                    <li>Cisco ISR 4331 routers</li>
+                    <li> Cisco Catalyst 9300 multilayer switches with PoE and automation/programmability support</li>
+                    <li>Cisco Catalyst 9200 switches with automation/programmability support</li>
+                    <li>Cisco Catalyst 6500 series modular switches</li>
+                    <li>Cisco IP phones (various models)</li>
+                    <li>Cisco lightweight wireless access points and WLAN controllers (various models)</li>
+                    <li>Variety of hardware and software to support the latest networking technologies</li>
+                </ul><br>
+                The lab also has reservation system that allows students to book time to use the equipment remotely when
+                it is not being used in class. This essentially allows the devices in the lab to be accessible at any
+                time and any place.
+                </p>
+            </div>
+
+            <div class="facilities-col">
+                <img src="images/cafeteria.png">
+                <h3> Tasty and Healthy Food </h3>
+                <p>Canteens and other food services are important educational resources.<br>
+                    They have an important role in the provision of food to students and the school community <br>
+                    as well as being an integral part of the school environment.</p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!--Instructors-->
+    <section class="instruct">
+        <h1> Instructors </h1>
+
+
+        <div class="row">
+
+            <div class="instruct-col">
+                <img src="images/kelum.png">
+                <h3>Lecture In Charge</h3>
+                <p>Mr.Dinujaya Kelum <br> dinujayakelum@net.rjt.ac.lk</p>
+                <i class="fa fa-facebook"></i>
+                <i class="fa fa-twitter"></i>
+                <i class="fa fa-instagram"></i>
+                <i class="fa fa-linkedin"></i>
+            </div>
+
+            <div class="instruct-col">
+                <img src="images/nipun.png">
+                <h3>Seneior Lecture</h3>
+                <p>Mr.Nipun Dilshan <br> nipundilshan@net.rjt.ac.lk</p>
+                <i class="fa fa-facebook"></i>
+                <i class="fa fa-twitter"></i>
+                <i class="fa fa-instagram"></i>
+                <i class="fa fa-linkedin"></i>
+            </div>
+
+            <div class="instruct-col">
+                <img src="images/dileesha.png">
+                <h3>Senior Lecture</h3>
+                <p>Mr.Dileesha Lakshan <br> dileeshalakshan@net.rjt.ac.lk</p>
+                <i class="fa fa-facebook"></i>
+                <i class="fa fa-twitter"></i>
+                <i class="fa fa-instagram"></i>
+                <i class="fa fa-linkedin"></i>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!--Quoes Section-->
+    <section class="fback">
+        <h1> Our Feedbacks </h1>
+        <div class="row">
+
+            <div class="fback-col">
+                <img src="images/oshan.png">
+                <div>
+                    <p> This certificates designed to develop your knowledge and expertise in the development of CCNA
+                        network and routing. very good and very clever Instructor, powerful computers, cisco switches &
+                        cisco routing this cert in to the VTA.
+                    </p>
+                    <h3> Oshan Kalhara</h3>
+                </div>
+            </div>
+
+            <div class="fback-col">
+                <img src="images/sankalpa.png">
+                <div>
+                    <p> The best place for start to be a professional in networking field. Highly recommend this
+                        institute. </p>
+                    <h3> Sankalpa Hettiarachchi </h3>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!--contact us banner sectton-->
+    <section class="cta">
+        <h1>Feel free to contact us to Join with us </h1>
+        <a href="contact.html" class="hero-btn">CONTACT US</a>
+    </section>
+
+
+    <!--Footer Section-->
+    <section class="footer">
+        <HR>
+        <div class="icons">
+            <a href="https://www.facebook.com/charitha.cb/"><i class="fa fa-facebook"></i></a>
+            <i class="fa fa-twitter"></i>
+            <i class="fa fa-instagram"></i>
+            <a href="https://www.linkedin.com/in/charitha-cb/"><i class="fa fa-linkedin"></i></a>
+        </div>
+        <p class="dev">Developed by itt1819011</p>
+    </section>
+
+
+</body>
+
+</html>

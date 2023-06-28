@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta name="viewport" content="width=device-width, intial-scale=1.0">
+    <title> Rajarata Network Academy </title>
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,600;1,500&display=swap"
+        rel="stylesheet">
+    <script src="https://kit.fontawesome.com/ac649c4fa1.js" crossorigin="anonymous"></script>
+
+
+
+
+</head>
+
+<body>
+    <!--The Header-->
+    <section class="sub-header">
+        <nav>
+            <div class="navi" id="navLinks">
+                <i class="fa fa-times" onclick="hidemenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a> </li>
+                    <li><a href="about.html">ABOUT</a> </li>
+                    <li><a href="news.html">NEWS</a> </li>
+                    <li><a href="cert.html">COURSES</a> </li>
+
+                    <li><a href="contact.html">CONTACT</a> </li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showmenu()"></i>
+            <a href="index.html"> <img src="images/logo.png"> </a>
+        </nav>
+        <h1>Contact Us</h1>
+
+    </section>
+    <!--Contact us-->
+    <section class="location">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3947.413582308815!2d80.50120251405558!3d8.360912201
+    397964!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3afc8a63370239cb%3A0xfde408ba97b0d4d3!2sRajarata%20University%
+    20of%20Sri%20Lanka!5e0!3m2!1sen!2slk!4v1634395047740!5m2!1sen!2slk" width="600" height="450" style="border:0;"
+            allowfullscreen="" loading="lazy"></iframe>
+    </section>
+
+    <section class="contact-us">
+        <div class="row">
+            <div class="contact-col">
+                <div>
+                    <i class="fa fa-home"></i>
+                    <span>
+                        <h5>RNA Building, 4th Lane</h5>
+                        <p>North Central province, Mihintale, Sri Lanka</p>
+                    </span>
+                </div>
+
+                <div>
+                    <i class="fa fa-phone"></i>
+                    <span>
+                        <h5>+94771518750</h5>
+                        <p>Monday to Friday, 10am to 6pm</p>
+                    </span>
+                </div>
+
+                <div>
+                    <i class="fa fa-envelope"></i>
+                    <span>
+                        <h5>hello-uni@rna.ac.lk</h5>
+                        <p>email us your query</p>
+                    </span>
+                </div>
+
+            </div>
+
+            <div class="contact-col">
+                <form id="cform" action="form-handler.php" method="post">
+                    <input type="text" name="name" placeholder="Enter Your Name" required>
+                    <input type="email" name="email" placeholder="Enter Your email" required>
+                    <input type="text" name="subject" placeholder="Enter Your Subject" required>
+                    <textarea rows="8" name="message" placeholder="Message" required></textarea>
+                    <button type="submit" class="hero-btn red-btn"> Send Message </button>
+                </form>
+
+            </div>
+        </div>
+
+    </section>
+
+
+    <!--Java Script for Menu tab-->
+    <script>
+        var navLinks = document.getElementById("navLinks")
+        function showmenu() {
+            navLinks.style.left = "0";
+        }
+
+        function hidemenu() {
+            navLinks.style.left = "-200px";
+        }
+
+    var cform = document.getElementById('cform')
+    cform.addEventListener('submit',function(e){
+        alert("Send Message Successfully")
+    } )
+    </script>
+
+
+    <section class="footer">
+        <HR>
+        <div class="icons">
+            <a href="https://www.facebook.com/charitha.cb/"><i class="fa fa-facebook"></i></a>
+            <i class="fa fa-twitter"></i>
+            <i class="fa fa-instagram"></i>
+            <a href="https://www.linkedin.com/in/charitha-cb/"><i class="fa fa-linkedin"></i></a>
+        </div>
+        <p class="dev">Developed by itt1819011</p>
+    </section>
+
+
+</body>
+
+</html>
